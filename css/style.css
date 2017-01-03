@@ -1,0 +1,127 @@
+/* Custom Stylesheet */
+/**
+* Use this file to override Materialize files so you can update
+* the core Materialize files in the future
+*
+* Made By MaterializeCSS.com
+*/
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+/* my css */
+.table-of-contents {
+
+}
+/*
+.hide-on-small-only .container ul, #logo-container {
+position: fixed;
+height: 100%;
+overflow: scroll;
+z-index: -1;
+}*/
+
+.row .col {
+  padding: 0 0rem;
+}
+
+.container {
+  width: 100%;
+}
+
+.container.context {
+  width: 80%;
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 95%;
+  }
+}
+.collection {
+  border: 0px;
+}
+
+.collection .collection-item, .collection .collection-header{
+  border: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.collection .collection-header h6{
+  font-weight: bold;
+}
+
+#about {
+  padding-top: 0rem;
+}
+
+.table-of-contents a.active {
+  border-left: 2px solid #757575;
+}
+
+.table-of-contents a:hover {
+  border-left: 2px solid #a8a8a8;
+}
+
+.worked_with img {
+  height: 100px;
+  padding: 10px;
+  filter: url(filters.svg#grayscale);
+  /* Firefox 3.5+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome & Safari 6+ */
+}
+
+.parallax img {
+  max-width: 1000px;
+}

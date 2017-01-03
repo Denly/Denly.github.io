@@ -1,226 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Parallax Template - Materialize</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Daniel - Software Developer</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
+<body>
+  <div class="fixed-action-btn horizontal click-to-toggle">
+    <a class="btn-floating btn-large grey button-collapse hide-on-med-and-up" data-activates="nav-mobile">
+      <i class="material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">Daniel's Space</span>
-                </a>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#illustrations">illustrations</a>
-                        <!--http://denlyshih.tumblr.com/illustrations-->
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="Resume_Huai_Chun_Shih.pdf">Resume</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+  <ul id="nav-mobile" class="side-nav collection with-header">
+    <li class="collection-header"><h6>:Davin Shih</h6></li>
+    <li class="collection-item"></li>
+    <li class="collection-header"><a href="#about"><h6>About</h6></a></li>
+    <li class="collection-header"><a href="#web_mobile_app"><h6>Coding Project</h6></a></li>
+    <li class="collection-item"><a href="#web_mobile_app">web & mobile app</a></li>
+    <li class="collection-item"><a href="#machine_learning">machine learning</a></li>
+    <li class="collection-item"><a href="#computer_vision">computer vision</a></li>
+    <li class="collection-item"><a href="#computer_graphics">computer graphics</a></li>
+    <li class="collection-header"><a href="#HCI"><h6>Design Project</h6></a></li>
+    <li class="collection-item"><a href="#HCI">HCI</a></li>
+    <li class="collection-item"><a href="#ui_component">UI component</a></li>
+    <li class="collection-item"><a href="#ux_ui_design">UX/UI design</a></li>
+    <li class="collection-item"><a href="#illustration">Illustration</a></li>
+    <li class="collection-item"><a href="#other_design">other design</a></li>
+  </ul>
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                    <img class="headImg" src="http://i.imgur.com/ZoQQgHT.jpg">
-                        <h1 class="brand-heading">Daniel Shih</h1>
-                        <p class="intro-text">Software Engineer, Web Developer, Illustrator.</p><br>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
+
+
+
+  <!-- Page Layout here -->
+  <div class="row">
+
+    <div class="col hide-on-small-only m4 l3"> <!-- Note that "m4 l3" was added -->
+      <!-- Grey navigation panel
+
+      This content will be:
+      3-columns-wide on large screens,
+      4-columns-wide on medium screens,
+      12-columns-wide on small screens  -->
+      <div class="container">
+        <ul class="collection with-header table-of-contents fixed">
+          <li class="collection-header"><h6>:Davin Shih</h6></li>
+          <li class="collection-item"></li>
+          <li class="collection-header"><a href="#about"><h6>About</h6></a></li>
+          <li class="collection-header"><a href="#web_mobile_app"><h6>Coding Project</h6></a></li>
+          <li class="collection-item"><a href="#web_mobile_app">web & mobile app</a></li>
+          <li class="collection-item"><a href="#machine_learning">machine learning</a></li>
+          <li class="collection-item"><a href="#computer_vision">computer vision</a></li>
+          <li class="collection-item"><a href="#computer_graphics">computer graphics</a></li>
+          <li class="collection-header"><a href="#HCI"><h6>Design Project</h6></a></li>
+          <li class="collection-item"><a href="#HCI">HCI</a></li>
+          <li class="collection-item"><a href="#ui_component">UI component</a></li>
+          <li class="collection-item"><a href="#ux_ui_design">UX/UI design</a></li>
+          <li class="collection-item"><a href="#illustration">Illustration</a></li>
+          <li class="collection-item"><a href="#other_design">other design</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
+        <!-- Teal page content -->
+        <!-- section -->
+        <div id="about" class="section scrollspy">
+          <div id="index-banner" class="parallax-container">
+            <div class="section no-pad-bot">
+              <div class="container">
+                <br><br>
+                <h1 class="header center white-text text-lighten-2"><img class="circle" height="100px" src="headimg.jpg"/> <br/> :Davin Shih</h1>
+                <div class="row center">
+                  <h5 class="header col s12 light">Desing and build.</h5>
                 </div>
+                <br><br>
+
+              </div>
             </div>
-        </div>
-    </header>
+            <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+          </div>
+          <div class="container context">
+            <div class="section">
 
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About</h2>
-                <p>Hi This website is to introduce myself to who may work with me or employers.
-                  Web Development, HCI, and Aritifical Intelient are my major interests in CS field.
-                  I'm studying Computer Science in Boston University since 2015, after I finished bio B.S in National Taiwan University at 2014.
-
-                  Also I'm both an American resident and a Taiwanese citizen, so I can work and live in both countries.
-
-                My other interests are illustration, walking dog, and jogging etc.
-                I'm a very easy going person who make friends with any country's people.
-                Feel free to check out my <a href="Resume_Huai_Chun_Shih.pdf">Resume</a>.
-                </p>
-                <br><br><br><br><br>
-                <p>-- by Daniel &nbsp;&nbsp; 2.14.2016</p>
-            </div>
-        </div>
-    </section>
-    <!-- About Section -->
-    <section id="projects" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Projects</h2>
-                <p># EyeProtector: Maintaining a Healthy Viewing Distance” 2014#<br>Mobile-HCI 2015 - Jimmy Ho, Reinhard, Shih Huai-Chun, Prof. Mike Chen
-                <br><br>
-                We built an app and a researching method that detect user’s viewing distance, warn users to keep safe
-distance, analysis user behaviors. 
-IOS app development, HCI, Face detection, VICON motion capture, Statistics, etc. <br><br> <a class="btn btn-default btn-lg" href="http://dl.acm.org/citation.cfm?id=2785836 ">Article on ACM</a>
-                </p>
-                <br>
-                <p># Neural Network 2016#<br>
-                Using Python and numpy to create three Layer Neural Network.
-                <br><br>
-                 <a class="btn btn-default btn-lg" href="https://github.com/Denly/3-layer-neural-network">Github</a>
-                 <a class="btn btn-default btn-lg" href="sub_page/P2.html">Demo</a>
-                </p>
-
-                <p># GestureDetect 2016#<br>
-                Detecting your hands and recognize gestures
-                <br><br>
-                by OpenCV3.1, C++
-                <br><br>
-                 <a class="btn btn-default btn-lg" href="https://github.com/Denly/hands_detection_opencv">Github</a>
-                </p>
-
-                <p># CatsChat 2015#<br>
-                A simgple  chatting web application for teaching meteor.js. for developers. To show you can make a chatting room in 2 hours.
-                <br><br>
-                by Meteor.js, Node.js, Bootstrap, Filepicker, JavaScript, html, etc. 
-                <br>p.s the meteor shutdown the free server, so I stopped demo temporarily.I'll find a new server soon.
-                <br><br>
-                <a class="btn btn-default btn-lg" href="https://github.com/Denly/ChatCat">Github</a>
-                 <!--<a class="btn btn-default btn-lg" href="http://chattingcat.meteor.com/">Demo</a>-->
-                </p>
-                <p># TOEFL penguin 2013#
-                <br>My first very simple Android App for TOEFL English exam. 5000 users, 4.5 starts.
-                <br>
-Java, Android App, Audio operations, etc. it is somewhat old. I may update it one day.
-<br><br>
-                 <a class="btn btn-default btn-lg" href="https://github.com/Denly/TOEFL-Speaking-Penguin">Github</a>
-                 <a class="btn btn-default btn-lg" href="https://play.google.com/store/apps/details?id=com.juby.toefl_speaking">Demo</a>
-                </p>
-
-
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="illustrations" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>illustrations</h2>
-                <p>Now I'm lazy to write code for showing image beautifully. You can visit my <a href="http://denlyshih.tumblr.com/illustrations">tumblr</a>.<br>
-
-                </p>
-                <div class="imgContenter">
-                <a href="http://denlyshih.tumblr.com/illustrations"><img class="demoImg" src="https://dl.dropboxusercontent.com/u/47631918/Portfolio/illustration/animagus_putin.jpg"></a></div>
-            </div>
-        </div>
-
-        <!--
-        <div class="imgContenter">
-        <img class="demoImg" src="http://55.media.tumblr.com/e37ab6c4fbe7e7130f9cd4523ffc1326/tumblr_inline_nh2vi05zBV1t7t84x.jpg"></div>
-        <div class="imgContenter">
-        <img class="demoImg" src="https://dl.dropboxusercontent.com/u/47631918/Portfolio/illustration/animagus_putin.jpg"></div>
-        <div class="imgContenter">
-        <img class="demoImg" src="https://dl.dropboxusercontent.com/u/47631918/Portfolio/illustration/CatSnow.jpg"></div>
-        <div class="imgContenter">
-        <img class="demoImg" src="https://dl.dropboxusercontent.com/u/47631918/Portfolio/illustration/cat_rat.png"></div>
-        <div class="imgContenter">
-        <img class="demoImg" src="https://dl.dropboxusercontent.com/u/47631918/Portfolio/illustration/musel%20man.jpg"></div>
-        <div class="imgContenter">
-        <img class="demoImg" src="https://dl.dropboxusercontent.com/u/47631918/Portfolio/illustration/tree.jpg"></div>
-
-        -->
-    </section>
-    <!--Contact Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Contact</h2>
-                    <p>daniel.shih9@gmail.com<br>626 410 5848</p>
-                    <!--<a class="btn btn-default btn-lg" href="#">Call Me in browser</a>-->
+              <div class="row">
+                <div class="col s12 center">
+                  <h3><i class="mdi-content-send brown-text"></i></h3>
+                  <h4>About</h4>
+                  <p class="light">Hi This website is to introduce myself to who may work with me. Web Development, HCI, and Aritifical Intelient are my major interests in CS field. I'm studying Computer Science in Boston University since 2015, after I finished bio B.S in National Taiwan University at 2014. Also I'm both an American resident and a Taiwanese citizen, so I can work and live in both countries. My other interests are illustration, walking dog, and jogging etc. I'm a very easy going person who make friends with any country's people. Feel free to check out my Resume.</p>
+                  <p class="worked_with light">Who worked with me <br>
+                    <img src="NTUlogo.png" />
+                    <img src="BUlogo.gif" />
+                    <img src="coachuplogo.jpg" />
+                    <img src="blade.jpg" />
+                    <img src="iLab.png" />
+                  </p>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Huai Chun Shih .Daniel</p>
+        <!-- section -->
+        <div id="web_mobile_app" class="section scrollspy">
+          <h2 class="header center">web & mobile app</h2>
+
+          <div class="parallax-container valign-wrapper">
+            <div class="section no-pad-bot">
+              <div class="container">
+                <div class="row center">
+                  <h5 class="header col s12 light"></h5>
+                </div>
+              </div>
+            </div>
+            <div class="parallax"><img src="meetcute.png" alt="Unsplashed background img 2"></div>
+          </div>
+
+          <div class="container context">
+            <div class="section">
+
+              <div class="row">
+                <div class="col s12 center">
+                  <h3><i class="mdi-content-send brown-text"></i></h3>
+                  <h4>MeetCute</h4>
+                  <p class="light">
+                    A dating App, responsive, cross-plateform, offering real-time chatting, profile editing, FB login. <br/>
+                    Role: Teamleader & Software Engineer <br/>
+                    Tech: Node.js, Meteor.js, React, MVC & MVVM architecture, Test driven. <br/>
+                    <a class="btn grey" href="https://github.com/Denly/CS673_team2">Github</a>
+                    <a class="btn grey" href="http://meet-cute.me:3000/">Demo</a> <br/>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
-    </footer>
+        <!-- section -->
+        <div id="machine_learning" class="section scrollspy">
+          <h2 class="header center">Machine learning</h2>
+          <div class="parallax-container valign-wrapper">
+            <div class="section no-pad-bot">
+              <div class="container">
+                <div class="row center">
+                  <h5 class="header col s12 light"></h5>
+                </div>
+              </div>
+            </div>
+            <div class="parallax"><img src="ML.png" alt="Unsplashed background img 2"></div>
+          </div>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+          <div class="container context">
+            <div class="section">
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+              <div class="row">
+                <div class="col s12 center">
+                  <h3><i class="mdi-content-send brown-text"></i></h3>
+                  <h4>Classification, regression</h4>
+                  <p class="light">
+                    Severl small projects by Python, useing, KNN, decision tree, random forest, linear regression, polynomial regression, SVM. neural networks. etc.  <br/>
+                    Role: Software Engineer <br/>
+                    Tech: python with numpy, scikit learn. etc. <br/>
+                    <a class="btn grey" href="https://github.com/Denly/3-layer-neural-network">Github</a>
+                    <a class="btn grey" href="http://denly.github.io/sub_page/P2.html">Report</a> <br/>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
+        <!-- section -->
+        <div id="computer_vision" class="section scrollspy">
+          <h2 class="header center">Computer Vision</h2>
+          <div class="parallax-container valign-wrapper">
+            <div class="section no-pad-bot">
+              <div class="container">
+                <div class="row center">
+                  <h5 class="header col s12 light"></h5>
+                </div>
+              </div>
+            </div>
+            <div class="parallax"><img src="helicopter.gif" alt="Unsplashed background img 2"></div>
+          </div>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+          <div class="container context">
+            <div class="section">
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
+              <div class="row">
+                <div class="col s12 center">
+                  <h3><i class="mdi-content-send brown-text"></i></h3>
+                  <h4>Blade Helicopter Tracking</h4>
+                  <p class="light">
+                    We are helping BLADE to automate part of their business workflow. We implement a computer vision algortihm to track the helicopter, in order to know: 1. when the helicopters are arriving at various destinations. 2. how many passengers are getting on and off the choppers. 3. To get the number of the helicopter. Which is done by manually recording currently. Our systme will replace this manual work. <br/>
+                    Role: Software Engineer in a 3 people team <br/>
+                    Tech: C++, OpenCV, Optcal Flow. etc. <br/>
+                    <a class="btn grey" href="https://github.com/barronlroth/BladeVision">Private Github</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- section -->
+        <div id="computer_graphics" class="section scrollspy">
+          <h2 class="header center">Computer Graphics</h2>
+          <div class="parallax-container valign-wrapper">
+            <div class="section no-pad-bot">
+              <div class="container">
+                <div class="row center">
+                  <h5 class="header col s12 light"></h5>
+                </div>
+              </div>
+            </div>
+            <div class="parallax"><img src="cg_fish.gif" alt="Unsplashed background img 2"></div>
+          </div>
+
+          <div class="container context">
+            <div class="section">
+
+              <div class="row">
+                <div class="col s12 center">
+                  <h3><i class="mdi-content-send brown-text"></i></h3>
+                  <h4>Aquarium</h4>
+                  <p class="light">
+                    Implemented animetion, collision detection, chasing, groupin behavior. etc.<br/>
+                    Tech: Java, OpenG. <br/>
+                    <a class="btn grey" href="https://github.com/Denly/CG-CS680-fish">Github</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- section -->
+        <div id="HCI" class="section scrollspy">
+          <h2 class="header center">HCI</h2>
+          <div class="parallax-container valign-wrapper">
+            <div class="section no-pad-bot">
+              <div class="container">
+                <div class="row center">
+                  <h5 class="header col s12 light"></h5>
+                </div>
+              </div>
+            </div>
+            <div class="parallax"><img src="hci.png" alt="Unsplashed background img 2"></div>
+          </div>
+
+          <div class="container context">
+            <div class="section">
+              <div class="row">
+                <div class="col s12 center">
+                  <h3><i class="mdi-content-send brown-text"></i></h3>
+                  <h4>EyeProtector</h4>
+                  <p class="light">
+                    With the advent of the technological era, Computer Vision Syndrome (CVS) has become a common problem. Due to the small hand-held form of smartphones, many users are not aware of the distance between eyes and the device. This habit may lead to negative impacts on ocular health. Always keeping a safe distance prevents the user from CVS. In this paper, we present a mobile application that utilizes the front camera to estimate the distance between the phone and the user. Once this distance is too short, the system alerts the user. We explore four different types of warnings: Blur, Flashing Border, Spot, and Push Notification. We conducted user studies to measure satisfaction, effectiveness, and distraction of these warning methods. Our results show that our system is effective in reminding users to keep a safe distance.<br/>
+                    Tech: Face-detection, computer vision, IOS, user study. <br/>
+                    <a class="btn grey" href="http://dl.acm.org/citation.cfm?id=2785836">Publication on ACM</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- section -->
+        <div id="ui_component" class="section scrollspy">
+          <h2 class="header center">UI component</h2>
+          <div class="container context">
+            <div class="section">
+              <div class="row">
+                <div class="col s12 center">
+                  <h3><i class="mdi-content-send brown-text"></i></h3>
+                  <h4></h4>
+                  <p class="light">
+                    Here are few components I made in my own project, to creating a loading icon that is not boring. You can scrolling them to play with them and I tried several patterns. <br/>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p data-height="300" data-theme-id="0" data-slug-hash="gaNomR" data-default-tab="result" data-user="Denly" data-embed-version="2" data-pen-title="logo animi - infinite rotate " class="codepen">See the Pen <a href="https://codepen.io/Denly/pen/gaNomR/">logo animi - infinite rotate </a> by Den (<a href="http://codepen.io/Denly">@Denly</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+          <p data-height="300" data-theme-id="0" data-slug-hash="ZbdrvO" data-default-tab="result" data-user="Denly" data-embed-version="2" data-pen-title="logo animi - infinite rotate 3" class="codepen">See the Pen <a href="https://codepen.io/Denly/pen/ZbdrvO/">logo animi - infinite rotate 3</a> by Den (<a href="http://codepen.io/Denly">@Denly</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+          <p data-height="300" data-theme-id="0" data-slug-hash="PPrQby" data-default-tab="result" data-user="Denly" data-embed-version="2" data-pen-title="logo animi - infinite rotate 2" class="codepen">See the Pen <a href="https://codepen.io/Denly/pen/PPrQby/">logo animi - infinite rotate 2</a> by Den (<a href="http://codepen.io/Denly">@Denly</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+          <p data-height="300" data-theme-id="0" data-slug-hash="LpgQxZ" data-default-tab="result" data-user="Denly" data-embed-version="2" data-pen-title="Pink Gift" class="codepen">See the Pen <a href="https://codepen.io/Denly/pen/LpgQxZ/">Pink Gift</a> by Den (<a href="http://codepen.io/Denly">@Denly</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
+
+        </div>
+
+        <!-- section -->
+        <div id="illustration" class="section scrollspy">
+          <h2 class="header center">Illustration</h2>
+
+          <div class="parallax-container valign-wrapper">
+            <div class="section no-pad-bot">
+              <div class="container">
+                <div class="row center">
+                  <h5 class="header col s12 light"></h5>
+                </div>
+              </div>
+            </div>
+            <div class="parallax"><img src="https://dl.dropboxusercontent.com/u/47631918/Portfolio/illustration/animagus_putin.jpg" alt="Unsplashed background img 2"></div>
+          </div>
+
+          <div class="parallax-container valign-wrapper">
+            <div class="section no-pad-bot">
+              <div class="container">
+                <div class="row center">
+                  <h5 class="header col s12 light"></h5>
+                </div>
+              </div>
+            </div>
+            <div class="parallax"><img src="http://68.media.tumblr.com/e37ab6c4fbe7e7130f9cd4523ffc1326/tumblr_inline_nh2vi05zBV1t7t84x.jpg" alt="Unsplashed background img 2"></div>
+          </div>
+
+          <div class="parallax-container valign-wrapper">
+            <div class="section no-pad-bot">
+              <div class="container">
+                <div class="row center">
+                  <h5 class="header col s12 light"></h5>
+                </div>
+              </div>
+            </div>
+            <div class="parallax"><img src="https://dl.dropboxusercontent.com/u/47631918/Portfolio/illustration/crokdial_doing.jpg" alt="Unsplashed background img 2"></div>
+          </div>
+
+          <div class="parallax-container valign-wrapper">
+            <div class="section no-pad-bot">
+              <div class="container">
+                <div class="row center">
+                  <h5 class="header col s12 light"></h5>
+                </div>
+              </div>
+            </div>
+            <div class="parallax"><img src="https://dl.dropboxusercontent.com/u/47631918/Portfolio/illustration/CatSnow.jpg" alt="Unsplashed background img 2"></div>
+          </div>
+
+          <div class="parallax-container valign-wrapper">
+            <div class="section no-pad-bot">
+              <div class="container">
+                <div class="row center">
+                  <h5 class="header col s12 light"></h5>
+                </div>
+              </div>
+            </div>
+            <div class="parallax"><img src="https://dl.dropboxusercontent.com/u/47631918/Portfolio/illustration/tree.jpg" alt="Unsplashed background img 2"></div>
+          </div>
+
+        </div>
+
+        <div class="parallax-container valign-wrapper">
+          <div class="section no-pad-bot">
+            <div class="container">
+              <div class="row center">
+                <h5 class="header col s12 light"></h5>
+              </div>
+            </div>
+          </div>
+          <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <footer class="page-footer grey lighten-2">
+    <div class="footer-copyright grey lighten-1">
+      <div class="container">
+        Made by Davin Shih with Materialize design
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
 
 </body>
-
 </html>
