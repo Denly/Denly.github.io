@@ -57,17 +57,6 @@ footer.page-footer {
 }
 
 /* my css */
-.table-of-contents {
-
-}
-/*
-.hide-on-small-only .container ul, #logo-container {
-position: fixed;
-height: 100%;
-overflow: scroll;
-z-index: -1;
-}*/
-
 .row .col {
   padding: 0 0rem;
 }
@@ -124,4 +113,27 @@ z-index: -1;
 
 .parallax img {
   max-width: 1000px;
+}
+
+#about span {
+  background-color: #bebebe;
+  color: white;
+  font-size: 1.7em;
+  padding-left: 10px;
+}
+
+#about {
+  margin-top: 50px;
+}
+
+h1, h2, h3, h4, h5, .side-nav a {
+  color: #757575;
+}
+
+#about .title h1, #about .title h4{
+  color: #bebebe !important;
+}
+
+.col.s12.m6.l4 {
+    padding: 20px;
 }
