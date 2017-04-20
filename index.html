@@ -29,6 +29,7 @@
     <li><a href="#about"><h5>Davin Shih</h5></a></li>
     <li><h5></h5></li>
     <li><a href="#about"><h5>About</h5></a></li>
+    <li><a href="#working_experience"><h5>Working Experience</h5></a></li>
     <li><a href="#web_mobile_app"><h5>Coding Project</h5></a></li>
     <li><a href="#web_mobile_app">web & mobile app</a></li>
     <li><a href="#machine_learning">machine learning</a></li>
@@ -57,6 +58,7 @@
           <li class="collection-header"><h5>Davin Shih</h5></li>
           <li class="collection-item"></li>
           <li class="collection-header"><a href="#about"><h6>About</h6></a></li>
+          <li class="collection-header"><a href="#working_experience"><h6>Working Experience</h6></a></li>
           <li class="collection-header"><a href="#web_mobile_app"><h6>Coding Project</h6></a></li>
           <li class="collection-item"><a href="#web_mobile_app">web & mobile app</a></li>
           <li class="collection-item"><a href="#machine_learning">machine learning</a></li>
@@ -76,16 +78,23 @@
       <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
         <!-- Teal page content -->
         <!-- section -->
-        <div id="about" class="section scrollspy center">
-          <div class="title">
-            <h1 class="header">Davin Shih</h1>
-            <h4>HCI<br>MACHINE LEARNING<br>SOFTWARE ENGINEERING</h4>
+        <div id="about" class="section scrollspy">
+
+          <div class="title row">
+
+            <div class="col m4">
+              <img src="my_photo.jpg"/>
+            </div>
+            <div class="col m8">
+              <h1 class="header">Davin Shih</h1>
+              <h5>HCI<br>MACHINE LEARNING<br>SOFTWARE ENGINEERING </h5>
+            </div>
           </div>
           <div class="container context">
             <div class="section">
 
               <div class="row">
-                <div class="col s12 center">
+                <div class="col s12">
                   <h3><i class="mdi-content-send brown-text"></i></h3>
                   <h4>About</h4>
                   <p class="light">
@@ -109,30 +118,28 @@
           </div>
 
           <!-- coding section start -->
-          <div id="web_mobile_app" class="section scrollspy">
-            <h2 class="header center">web & mobile app</h2>
-            <div class="parallax-container valign-wrapper">
-              <div class="section no-pad-bot">
-                <div class="container">
-                  <div class="row center">
-                    <h5 class="header col s12 light"></h5>
-                  </div>
-                </div>
-              </div>
-              <div class="parallax"><img src="CoachUP.png" alt="Unsplashed background img 2"></div>
-            </div>
+          <div id="working_experience" class="section scrollspy">
+
 
             <div class="container context">
               <div class="section">
                 <div class="row">
-                  <div class="col s12 center">
-                    <h3><i class="mdi-content-send brown-text"></i></h3>
-                    <h4>CoachUP</h4>
+                  <div class="col s12">
+                    <h3><i class="mdi-content-send brown-text"></i>Working Experience</h3>
+                    <h5>CoachUP Inc. as Software Engineer Intern</h5>
                     <p class="light">
-                      A platform that connects coachs and students together.<br/>
-                      I built enterprises level tools for admins to check feedbacks from clients and coachs, following MVC principles, by Ruby on Rail, Javascript, React.etc.<br/>
-                      Role: Software Engineer summer intern <br/>
-                      <a class="btn grey" target="_blank" href="https://www.coachup.com/">CoachUP website</a>
+                      MAY - JUL 2016<br/>
+                      ・ A platform connects coach and student. Built a new feature on their web app for admins to see historical user feedbacks with statistic info.<br/>
+                      ・Tech: Ruby on Rails, Node.js, SQL, React.js,
+                      Webpack, Cache optimization, MVC,
+                      Behavior driven development<br/>
+                    </p>
+                    <br/>
+                    <h5>Zomida Inc. in Harvard as Software Engineer Intern</h5>
+                    <p class="light">
+                      AUG - OCT 2015<br/>
+                      ・Wrote the minimal viable product’s frontend and provided UX consulting at Harvard’s incubation center. <br/>
+                      ・ Tech: CSS, Html5, JavaScript, Rapid prototyping<br/>
                     </p>
                   </div>
                 </div>
@@ -141,8 +148,28 @@
           </div>
 
           <!-- section -->
-          <div id="meetcute" class="section scrollspy">
+          <div id="web_mobile_app" class="section scrollspy">
 
+
+            <div class="container context">
+              <div class="section">
+
+                <div class="row">
+                  <div class="col s12">
+                    <h3><i class="mdi-content-send brown-text"></i>Coding Project</h3>
+                    <h5>MeetCute Prj. as Team Leader for 6 members </h5>
+                    <p class="light">
+                      SEP 2016 - CURRENT <br/>
+                      ・ A cross-platform web&mobile app to message in realtime, browse and edit user profiles. Built Facebook log in, message system, profile system, MongoDB data base, React.js front-end, unit test, acceptance test, UI/UX design. Implemented agile, TDD, and code review procedure.<br/>
+                       ・ Tech: Meteor.js, Node.js, MongoDB, React.js, MVC, MVVM, Distributed data model, Test driven dev., Latency compensation (Asynchronous),  Materialize Design<br/>
+                    </p>
+                    <a class="btn grey" target="_blank" href="https://github.com/Denly/CS673_team2">Github (old version)</a>
+
+                    <a class="btn grey" target="_blank" href="http://ccr.meteorapp.com">Under-building site</a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div class="row">
               <div class="col s12 m6 offset-m3">
@@ -152,52 +179,23 @@
                   </div>
                 </div>
               </div>
-
-            </div>
-            <div class="container context">
-              <div class="section">
-
-                <div class="row">
-                  <div class="col s12 center">
-                    <h3><i class="mdi-content-send brown-text"></i></h3>
-                    <h4>MeetCute</h4>
-                    <p class="light">
-                      Simple version of the dating App that is under developing. We have implemented real-time chatting, profile editing, FB login, and responsiveness in two months. <br/>
-                      Role: Teamleader & Software Engineer <br/>
-                      Tech: Node.js, Meteor.js, React, MVC & MVVM architecture, Test driven. <br/>
-                      <a class="btn grey" target="_blank" href="https://github.com/Denly/CS673_team2">Github</a>
-                      <!--<a class="btn grey" target="_blank" href="http://meet-cute.me:3000/">Demo</a> <br/>-->
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           <!-- section -->
           <div id="machine_learning" class="section scrollspy">
-            <h2 class="header center">Machine learning</h2>
-            <div class="parallax-container valign-wrapper">
-              <div class="section no-pad-bot">
-                <div class="container">
-                  <div class="row center">
-                    <h5 class="header col s12 light"></h5>
-                  </div>
-                </div>
-              </div>
-              <div class="parallax"><img src="ML.png" alt="Unsplashed background img 2"></div>
-            </div>
+            <h2 class="header"></h2>
 
             <div class="container context">
               <div class="section">
 
                 <div class="row">
-                  <div class="col s12 center">
-                    <h3><i class="mdi-content-send brown-text"></i></h3>
-                    <h4>Classification, regression</h4>
+                  <div class="col s12">
+                    <h3><i class="mdi-content-send brown-text"></i>Machine Learning Prj. as C.S student</h3>
                     <p class="light">
-                      Severl small projects by Python, useing, KNN, decision tree, random forest, linear regression, polynomial regression, SVM. neural networks. etc.  <br/>
-                      Role: Software Engineer <br/>
-                      Tech: python with numpy, scikit learn. etc. <br/>
+                      JUN 2016 - CURRENT <br/>
+                      GPA 4/4 in CS-542 Machine Learning <br/>
+                      ・ A series of machine leaning algorithms to do Classification, Regression, and Cluster on datasets. Like classifying handwriting image to characters, predicting a man may get heart disease or not by attributes. <br/>
+                      ・ Tech: KNN, Random Forest, K means, SVM, Neuron Network, Python, numpy, Scikit-learn.<br/>
                       <a class="btn grey" target="_blank" href="https://github.com/Denly/3-layer-neural-network">Github</a>
                       <a class="btn grey" target="_blank" href="http://denly.github.io/sub_page/P2.html">Report</a> <br/>
                     </p>
@@ -205,15 +203,16 @@
                 </div>
               </div>
             </div>
+
           </div>
 
           <!-- section -->
           <div id="computer_vision" class="section scrollspy">
-            <h2 class="header center">Computer Vision</h2>
+            <h2 class="header">Computer Vision</h2>
             <div class="parallax-container valign-wrapper">
               <div class="section no-pad-bot">
                 <div class="container">
-                  <div class="row center">
+                  <div class="row">
                     <h5 class="header col s12 light"></h5>
                   </div>
                 </div>
@@ -225,7 +224,7 @@
               <div class="section">
 
                 <div class="row">
-                  <div class="col s12 center">
+                  <div class="col s12">
                     <h3><i class="mdi-content-send brown-text"></i></h3>
                     <h4>Blade Helicopter Tracking</h4>
                     <p class="light">
@@ -242,24 +241,14 @@
 
           <!-- section -->
           <div id="computer_graphics" class="section scrollspy">
-            <h2 class="header center">Computer Graphics</h2>
-            <div class="parallax-container valign-wrapper">
-              <div class="section no-pad-bot">
-                <div class="container">
-                  <div class="row center">
-                    <h5 class="header col s12 light"></h5>
-                  </div>
-                </div>
-              </div>
-              <div class="parallax"><img src="cg_fish.gif" alt="Unsplashed background img 2"></div>
-            </div>
+            <h2 class="header"></h2>
 
             <div class="container context">
               <div class="section">
 
                 <div class="row">
-                  <div class="col s12 center">
-                    <h3><i class="mdi-content-send brown-text"></i></h3>
+                  <div class="col s12">
+                    <h3><i class="mdi-content-send brown-text"></i>Computer Graphics</h3>
                     <h4>Aquarium</h4>
                     <p class="light">
                       Implemented animation, collision detection, chasing, group behavior. etc.<br/>
@@ -270,12 +259,34 @@
                 </div>
               </div>
             </div>
+            <div class="parallax-container valign-wrapper">
+              <div class="section no-pad-bot">
+                <div class="container">
+                  <div class="row">
+                    <h5 class="header col s12 light"></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="parallax"><img src="cg_fish.gif" alt="Unsplashed background img 2"></div>
+            </div>
           </div>
           <!-- Design -->
           <!-- section -->
           <div id="ux_ui_design" class="section scrollspy">
-            <h2 class="header center">UX/UI design</h2>
-
+            <h2 class="header"></h2>
+            <div class="container context">
+              <div class="section">
+                <div class="row">
+                  <div class="col s12">
+                    <h3><i class="mdi-content-send brown-text"></i>UX/UI design</h3>
+                    <h4></h4>
+                    <p class="light">
+                      It improves the flow of how people ususally book/register repeated events, like Google calender, Amazon subscriptions.<br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="row">
               <div class="col s12 m6 l4">
                 <div class="card">
@@ -303,45 +314,20 @@
             </div>
 
 
-            <div class="container context">
-              <div class="section">
-                <div class="row">
-                  <div class="col s12 center">
-                    <h3><i class="mdi-content-send brown-text"></i></h3>
-                    <h4>To book days repeatedly</h4>
-                    <p class="light">
-                      This is one of the flow in my app to book days repeated. <br/>
-                      <a class="btn grey" target="_blank" href="#">Private Github (avalible by request)</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+
           </div>
 
           <div id="HCI" class="section scrollspy">
-            <h2 class="header center">HCI</h2>
-            <div class="parallax-container valign-wrapper">
-              <div class="section no-pad-bot">
-                <div class="container">
-                  <div class="row center">
-                    <h5 class="header col s12 light"></h5>
-                  </div>
-                </div>
-              </div>
-              <div class="parallax"><img src="hci.png" alt="Unsplashed background img 2"></div>
-            </div>
-
+            <h2 class="header"></h2>
             <div class="container context">
               <div class="section">
                 <div class="row">
-                  <div class="col s12 center">
-                    <h3><i class="mdi-content-send brown-text"></i></h3>
-                    <h4>EyeProtector</h4>
+                  <div class="col s12">
+                    <h3><i class="mdi-content-send brown-text"></i>EyeProtector - Publication at MobileHCI 2015  as Third Author</h3>
                     <p class="light">
-                      With the advent of the technological era, Computer Vision Syndrome (CVS) has become a common problem. Due to the small hand-held form of smartphones, many users are not aware of the distance between eyes and the device. This habit may lead to negative impacts on ocular health. Always keeping a safe distance prevents the user from CVS. In this paper, we present a mobile application that utilizes the front camera to estimate the distance between the phone and the user. Once this distance is too short, the system alerts the user. We explore four different types of warnings: Blur, Flashing Border, Spot, and Push Notification. We conducted user studies to measure satisfaction, effectiveness, and distraction of these warning methods. Our results show that our system is effective in reminding users to keep a safe distance.<br/>
-                      Role: Third author, user test, experiment design. <br/>
-                      Tech: OpenCV, Face-detection, computer vision, IOS. <br/>
+                      FEB - DEC 2014 <br/>
+                      ・ To encourage a healthy viewing distance, we built an app and a researching method that detect user’s viewing distance, warn users, analyzes user behaviors. <br/>
+                      ・ Tech: IOS, HCI, OpenCV, Face detection, motion capture,  statistics, user study.<br/>
                       <a class="btn grey" target="_blank" href="http://dl.acm.org/citation.cfm?id=2785836">Publication on ACM</a>
                     </p>
                   </div>
@@ -352,15 +338,15 @@
 
           <!-- section -->
           <div id="ui_component" class="section scrollspy">
-            <h2 class="header center">UI component</h2>
+            <h2 class="header"></h2>
             <div class="container context">
               <div class="section">
                 <div class="row">
-                  <div class="col s12 center">
-                    <h3><i class="mdi-content-send brown-text"></i></h3>
+                  <div class="col s12">
+                    <h3><i class="mdi-content-send brown-text"></i>UI component</h3>
                     <h4></h4>
                     <p class="light">
-                      Here are few components I made in my own project, to creating a loading icon that is not boring. You can scrolling them to play with them and I tried several patterns. <br/>
+                      Here are few components I made for my own projects, to creating a loading icon that is not boring. You can scrolling them to play with them and I tried several patterns. <br/>
                     </p>
                   </div>
                 </div>
@@ -387,7 +373,20 @@
 
           <!-- section -->
           <div id="illustration" class="section scrollspy">
-            <h2 class="header center">Illustration</h2>
+
+            <div class="container context">
+              <div class="section">
+                <div class="row">
+                  <div class="col s12">
+                    <h3><i class="mdi-content-send brown-text"></i>Illustration</h3>
+                    <h4></h4>
+                    <p class="light">
+                      I like draw illustrations and keep myself creative and productive. <br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div class="row">
 

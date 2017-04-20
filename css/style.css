@@ -14,6 +14,9 @@ nav .brand-logo {
 p {
   line-height: 2rem;
 }
+.btn {
+    margin: 10px;
+}
 
 .button-collapse {
   color: #26a69a;
@@ -114,9 +117,13 @@ footer.page-footer {
   font-size: 1.7em;
   padding-left: 10px;
 }
-
+/*About Section*/
 #about {
-  margin-top: 50px;
+  margin-top: 0px;
+}
+#about .title img {
+  margin-top: 40px;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, .side-nav a {
@@ -124,7 +131,7 @@ h1, h2, h3, h4, h5, .side-nav a {
 }
 
 .title h1, #about .title h4{
-  color: #bebebe !important;
+  /*color: #bebebe !important;*/
 }
 
 .col.s12.m6.l4 {
